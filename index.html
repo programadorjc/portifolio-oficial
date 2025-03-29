@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+
+</head>
+
+<body>
+    <header
+        style="display: flex; justify-content: space-between; align-items: center; padding: 20px; background-color: #161616; color: white;">
+        <h1 id="portfolioTitle" style="font-size: clamp(1.8em, 5vw, 2.5em);
+                   font-weight: 200;
+                   cursor: pointer;
+                   color: white;
+                   margin: 0;
+                   transition: color 0.3s ease;padding: 15px 0;">
+            Portfólio
+        </h1>
+        <nav style="display: flex; align-items: center; padding: 20px;">
+            <a href="#"
+                style="margin-left: 1em; font-size: 1.1em; text-decoration: none; color: blueviolet; transition: color 0.2s ease-in-out;">Sobre
+                Mim</a>
+            <a href="#"
+                style="margin-left: 1em; font-size: 1.1em; text-decoration: none; color: blueviolet; transition: color 0.2s ease-in-out;">Projetos</a>
+            <a href="#"
+                style="margin-left: 1em; font-size: 1.1em; text-decoration: none; color: blueviolet; transition: color 0.2s ease-in-out;">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <img src="porti bom.png" alt="Imagem do Portfólio"
+            style="max-width: 100%; height: auto; display: block; margin: 20px auto; border-radius: 50%; width: 120px;;">
+        <h1>Julio Cesar dos Santos</h1>
+        <div class="card-apresentacao"
+        style="display: flex;
+               flex-wrap: wrap;
+               gap: 15px;
+               justify-content: center;
+               padding: 25px;
+               background-color: white;
+               color: grey;
+               border-radius: 12px;
+               box-shadow: 2px 4px 2px #161616;
+               margin: 5px;
+               transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;"
+        onmouseover="this.style.boxShadow='5px 8px 5px rgba(0, 0, 0, 0.2)'; this.style.transform='translateY(-3px)';"
+        onmouseout="this.style.boxShadow='2px 4px 2px #161616'; this.style.transform='translateY(0)';">
+       <h3 style="color:orangered;">Introdução</h3>
+       <p style="color: #09072c;">
+           Olá! Sou Júlio César dos Santos, um profissional dedicado com uma base sólida construída durante
+           minha jornada acadêmica e profissional. Sou recém-formado, porém o conhecimento foi aprimorado com a
+           graduação. Busco oportunidades nas quais eu possa contribuir ao máximo e com o melhor de mim para que a
+           organização em que estiver inserido continue a alcançar novos voos de sucesso.
+           Conte comigo no que for preciso e juntos iremos ao progresso cada vez mais.
+           Atenciosamente,
+           JC
+       </p>
+   </div>
+   
+        <h2>Sobre Mim - Formação e Experiência</h2>
+        <section class="cards-container">
+            <div class="card">
+                <h3>Introdução</h3>
+                <p>
+                    Olá! Sou Júlio César dos Santos, um profissional dedicado com uma base sólida construída durante
+                    minha jornada acadêmica e profissional.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Formação Acadêmica</h3>
+                <p>
+                    Minha primeira formação de nível superior foi em Tecnologia em Gestão Comercial, pela Faculdade
+                    Unopar/Anhanguera (2024), proporcionando uma compreensão das dinâmicas de mercado e estratégias de
+                    negócios.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Pós-Graduação</h3>
+                <p>
+                    Para aprofundar meus conhecimentos e acompanhar o mundo digital, realizei uma Pós-graduação em
+                    Ciência da Computação 2025, adquirindo ferramentas teóricas e práticas essenciais.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Competências Profissionais</h3>
+                <p>
+                    Além da formação, possuo domínio das ferramentas do Pacote Office e adoto uma postura proativa
+                    diante de novos desafios, buscando sempre evolução pessoal e profissional.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <section class="skills">
+        <h2>Tecnologias de Conhecimento</h2>
+        <div style="padding: 20px;">
+            <ul
+                style="list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 15px; margin: 0 auto; max-width: 960px;">
+                <li
+                    style="display: flex; flex-direction: column; align-items: center; padding: 10px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; background-color: #f9f9f9;">
+                    <img src="html-logo.png" alt="HTML"
+                        style="width: 40px; height: auto; margin-bottom: 8px; max-width: 100%;">
+                    <h4 style="margin-top: 0; margin-bottom: 8px; text-align: center; font-size: 1em;">HTML</h4>
+                    <a href="https://pt.wikipedia.org/wiki/HTML"
+                        style="display: inline-block; background-color: #e34f26; color: white; padding: 6px 10px; text-decoration: none; border-radius: 5px; font-size: 0.8em; transition: background-color 0.3s ease;">Saiba
+                        mais</a>
+                </li>
+                <li
+                    style="display: flex; flex-direction: column; align-items: center; padding: 10px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; background-color: #f9f9f9;">
+                    <img src="css-logo.png" alt="CSS"
+                        style="width: 40px; height: auto; margin-bottom: 8px; max-width: 100%;">
+                    <h4 style="margin-top: 0; margin-bottom: 8px; text-align: center; font-size: 1em;">CSS</h4>
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"
+                        style="display: inline-block; background-color: #264de4; color: white; padding: 6px 10px; text-decoration: none; border-radius: 5px; font-size: 0.8em; transition: background-color 0.3s ease;">Saiba
+                        mais</a>
+                </li>
+                <li
+                    style="display: flex; flex-direction: column; align-items: center; padding: 10px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; background-color: #f9f9f9;">
+                    <img src="js-logo.png" alt="JavaScript"
+                        style="width: 40px; height: auto; margin-bottom: 8px; max-width: 100%;">
+                    <h4 style="margin-top: 0; margin-bottom: 8px; text-align: center; font-size: 1em;">JavaScript</h4>
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+                        style="display: inline-block; background-color: #f0db4f; color: #333; padding: 6px 10px; text-decoration: none; border-radius: 5px; font-size: 0.8em; transition: background-color 0.3s ease;">Saiba
+                        mais</a>
+                </li>
+                <li
+                    style="display: flex; flex-direction: column; align-items: center; padding: 10px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; background-color: #f9f9f9;">
+                    <img src="pitao.png" alt="Python"
+                        style="width: 40px; height: auto; margin-bottom: 8px; max-width: 100%;">
+                    <h4 style="margin-top: 0; margin-bottom: 8px; text-align: center; font-size: 1em;">Python</h4>
+                    <a href="https://www.python.org/"
+                        style="display: inline-block; background-color: #3776ab; color: white; padding: 6px 10px; text-decoration: none; border-radius: 5px; font-size: 0.8em; transition: background-color 0.3s ease;">Saiba
+                        mais</a>
+                </li>
+                <li
+                    style="display: flex; flex-direction: column; align-items: center; padding: 10px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; background-color: #f9f9f9;">
+                    <img src="php_icon_130857.png" alt="PHP"
+                        style="width: 40px; height: auto; margin-bottom: 8px; max-width: 100%;">
+                    <h4 style="margin-top: 0; margin-bottom: 8px; text-align: center; font-size: 1em;">PHP</h4>
+                    <a href="https://www.php.net/"
+                        style="display: inline-block; background-color: #777bb4; color: white; padding: 6px 10px; text-decoration: none; border-radius: 5px; font-size: 0.8em; transition: background-color 0.3s ease;">Saiba
+                        mais</a>
+                </li>
+                <li
+                    style="display: flex; flex-direction: column; align-items: center; padding: 10px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; background-color: #f9f9f9;">
+                    <img src="java.png" alt="Java"
+                        style="width: 40px; height: auto; margin-bottom: 8px; max-width: 100%;">
+                    <h4 style="margin-top: 0; margin-bottom: 8px; text-align: center; font-size: 1em;">Java</h4>
+                    <a href="https://www.java.com/pt-BR/"
+                        style="display: inline-block; background-color: #b07219; color: white; padding: 6px 10px; text-decoration: none; border-radius: 5px; font-size: 0.8em; transition: background-color 0.3s ease;">Saiba
+                        mais</a>
+                </li>
+                <li
+                    style="display: flex; flex-direction: column; align-items: center; padding: 10px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; background-color: #f9f9f9;">
+                    <img src="pacote office.png" alt="Pacote Office"
+                        style="width: 40px; height: auto; margin-bottom: 8px; max-width: 100%;">
+                    <h4 style="margin-top: 0; margin-bottom: 8px; text-align: center; font-size: 1em;">Pacote Office
+                    </h4>
+                    <a href="https://www.microsoft.com/pt-br/microsoft-365"
+                        style="display: inline-block; background-color: #d83b01; color: white; padding: 6px 10px; text-decoration: none; border-radius: 5px; font-size: 0.8em; transition: background-color 0.3s ease;">Saiba
+                        mais</a>
+                </li>
+            </ul>
+        </div>
+
+        <style>
+          
+        </style>
+
+        <style>
+       
+        </style>
+
+    </section>
+
+    <footer>
+        <div>
+            <a href="https://github.com/programadorjc" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#https://www.instagram.com/SeuInstagram" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#https://wa.me/SeuNumeroWhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="#https://www.youtube.com/channel/SEU_CANAL" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>© 2025 - Todos os direitos reservados</p>
+        <h3 style="background-color: #161616;color: white;">programadorjc</h3>
+    </footer>
+  
+</body>
+
+</html>

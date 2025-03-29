@@ -1,0 +1,226 @@
+ /* Reset e fonte */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    font-size: 20px; /* Reduzi o tamanho base da fonte para melhor responsividade inicial */
+    background-color: #0f0f0f;
+    color: white;
+}
+
+/* Header */
+header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Reduzi o padding do header */
+    background-color: #161616;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+header h1 {
+    font-size: clamp(1.8em, 5vw, 2.5em); /* Ajustei os valores do clamp para melhor responsividade */
+    font-weight: 200;
+    cursor: pointer;
+    color: white; /* Cor inicial branca, o hover será controlado por JS inline */
+    margin: 0;
+    transition: color 0.3s ease; /* Transição para a mudança de cor no hover */
+    padding: 15px 0; /* Adicionei um pouco de padding vertical ao h1 */
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav a {
+    margin-left: 1em; /* Usei margin-left para espaçamento consistente */
+    font-size: 1.1em; /* Reduzi o tamanho da fonte dos links */
+    text-decoration: none;
+    color: blueviolet;
+    transition: color 0.2s ease-in-out;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* Main */
+main {
+    text-align: center;
+    padding: 20px;
+    flex: 1; /* Permite que o main cresça para ocupar o espaço restante */
+}
+
+main img {
+    width: 150px; /* Reduzi o tamanho da imagem para melhor adaptação */
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    max-width: 100%; /* Garante a responsividade da imagem */
+    height: auto;
+}
+
+/* Cards para "Sobre Mim – Formação e Experiência" */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Reduzi o gap entre os cards */
+    justify-content: center;
+    padding: 15px; /* Reduzi o padding do container */
+}
+
+.card {
+    background-color: #161616;
+    padding: 15px; /* Reduzi o padding dos cards */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Sombra mais sutil */
+    flex: 1 1 calc(50% - 15px); /* Dois cards por linha em telas maiores */
+    min-width: 250px; /* Reduzi a largura mínima */
+    color: white;
+}
+
+.card h3 {
+    margin-bottom: 8px; /* Reduzi a margem inferior */
+    color: orangered;
+    font-size: 1.2em; /* Reduzi o tamanho da fonte do título do card */
+}
+
+.card p {
+    font-size: 18px; /* Reduzi o tamanho da fonte do texto do card */
+    line-height: 1.4; /* Ajustei a altura da linha */
+}
+
+/* Seção Tecnologias */
+section ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; /* Reduzi o gap entre os itens da lista */
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px; /* Reduzi o padding da lista */
+}
+
+section ul li {
+    padding: 4px 8px; /* Reduzi o padding dos itens da lista */
+    background-color: #161616;
+    border-radius: 4px;
+    font-size: 0.8em; /* Reduzi o tamanho da fonte dos itens da lista */
+    display: flex;
+    align-items: center;
+}
+
+section ul li img {
+    width: 20px; /* Reduzi o tamanho dos ícones */
+    height: auto;
+    vertical-align: middle;
+    margin-right: 3px; /* Reduzi a margem direita */
+    max-width: 100%;
+    display: inline-block;
+}
+
+section h2 {
+    padding: 15px 0; /* Reduzi o padding vertical */
+    text-align: center;
+    color: orangered;
+    font-size: 1.5em; /* Reduzi o tamanho da fonte do título da seção */
+}
+
+/* Footer */
+footer {
+    background-color: #161616;
+    text-align: center;
+    padding: 15px; /* Reduzi o padding do footer */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px; /* Reduzi o gap entre os itens do footer */
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s ease-in-out;
+    padding: 8px; /* Reduzi o padding dos links */
+}
+
+footer a:hover i {
+    color: blueviolet;
+}
+
+footer a i {
+    font-size: 1.5em; /* Reduzi o tamanho dos ícones do footer */
+}
+
+/* Mídia query para dispositivos menores */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        margin-top: 10px;
+        flex-direction: column; /* Empilha os links em telas menores */
+        align-items: center; /* Centraliza os links */
+    }
+
+    header nav a {
+        margin: 5px 0; /* Espaçamento vertical entre os links */
+    }
+
+    .card {
+        flex: 1 1 100%; /* Um card por linha em telas menores */
+    }
+}
+
+/* Removida a media query duplicada e a que forçava o alinhamento ao centro em telas maiores */
+
+ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+ul li a:hover {
+    background-color: #0056b3 !important;
+    /* Adicionado !important para garantir a prioridade */
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    ul {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+}
+
+
+/*     */
+ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+ul li a:hover {
+    background-color: #0056b3 !important;
+    /* Adicionado !important para garantir a prioridade */
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    ul {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+}
